@@ -1,0 +1,11 @@
+D:\C# Project\FirstApp\FirstApp\bin\Release\FirstApp.exe.config
+D:\C# Project\FirstApp\FirstApp\bin\Release\FirstApp.exe
+D:\C# Project\FirstApp\FirstApp\bin\Release\FirstApp.pdb
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.Form1.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.Form2.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.Form3.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.Properties.Resources.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.GenerateResource.cache
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.CoreCompileInputs.cache
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.exe
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.pdb
