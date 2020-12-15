@@ -54,6 +54,7 @@ namespace FirstApp
             this.label3 = new System.Windows.Forms.Label();
             this.search2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.nwh = new System.Windows.Forms.TabPage();
             this.removenwh = new System.Windows.Forms.Button();
             this.addnwh = new System.Windows.Forms.Button();
@@ -62,7 +63,6 @@ namespace FirstApp
             this.label4 = new System.Windows.Forms.Label();
             this.search3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.tab.SuspendLayout();
             this.cmh.SuspendLayout();
             this.nmh.SuspendLayout();
@@ -334,6 +334,7 @@ namespace FirstApp
             this.addpmh.TabIndex = 19;
             this.addpmh.Text = "Add entry";
             this.addpmh.UseVisualStyleBackColor = true;
+            this.addpmh.Click += new System.EventHandler(this.addpmh_Click);
             // 
             // comboBox3
             // 
@@ -387,6 +388,16 @@ namespace FirstApp
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.Location = new System.Drawing.Point(333, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 31);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // nwh
             // 
             this.nwh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -425,6 +436,7 @@ namespace FirstApp
             this.addnwh.TabIndex = 17;
             this.addnwh.Text = "Add entry";
             this.addnwh.UseVisualStyleBackColor = true;
+            this.addnwh.Click += new System.EventHandler(this.addnwh_Click);
             // 
             // button4
             // 
@@ -487,16 +499,6 @@ namespace FirstApp
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(333, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(31, 31);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 

@@ -17,9 +17,6 @@ namespace FirstApp
             InitializeComponent();
         }
 
-        private void AddEntry_Load(object sender, EventArgs e)
-        {
-
-        }
+   
     }
 }

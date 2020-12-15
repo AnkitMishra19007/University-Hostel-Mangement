@@ -120,12 +120,26 @@ namespace FirstApp
 
         private void addcmh_Click(object sender, EventArgs e)
         {
-    
+            AddEntry ad = new AddEntry();
+            ad.ShowDialog();
         }
 
         private void addnmh_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hey");
+            AddEntry ad = new AddEntry();
+            ad.ShowDialog();
+        }
+
+        private void addpmh_Click(object sender, EventArgs e)
+        {
+            AddEntry ad = new AddEntry();
+            ad.ShowDialog();
+        }
+
+        private void addnwh_Click(object sender, EventArgs e)
+        {
+            AddEntry ad = new AddEntry();
+            ad.ShowDialog();
         }
     }
 }

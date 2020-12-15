@@ -44,7 +44,7 @@ namespace FirstApp
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(356, 107);
+            this.button1.Location = new System.Drawing.Point(342, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 41);
             this.button1.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace FirstApp
             this.button2.BackColor = System.Drawing.Color.Olive;
             this.button2.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(356, 179);
+            this.button2.Location = new System.Drawing.Point(342, 179);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(211, 41);
             this.button2.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace FirstApp
             this.button3.BackColor = System.Drawing.Color.Teal;
             this.button3.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(356, 255);
+            this.button3.Location = new System.Drawing.Point(342, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(211, 41);
             this.button3.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace FirstApp
             this.button4.BackColor = System.Drawing.Color.Navy;
             this.button4.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(356, 331);
+            this.button4.Location = new System.Drawing.Point(342, 331);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(211, 41);
             this.button4.TabIndex = 4;
@@ -92,13 +92,13 @@ namespace FirstApp
             // 
             // button5
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.GreenYellow;
-            this.button5.Location = new System.Drawing.Point(738, 35);
+            this.button5.Location = new System.Drawing.Point(386, 416);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 35);
+            this.button5.Size = new System.Drawing.Size(126, 35);
             this.button5.TabIndex = 5;
             this.button5.Text = "Admin";
             this.button5.UseVisualStyleBackColor = false;
@@ -109,11 +109,11 @@ namespace FirstApp
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Font = new System.Drawing.Font("Elephant", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Elephant", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label1.Location = new System.Drawing.Point(226, 37);
+            this.label1.Location = new System.Drawing.Point(160, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(471, 31);
+            this.label1.Size = new System.Drawing.Size(569, 38);
             this.label1.TabIndex = 6;
             this.label1.Text = "TEZPUR UNIVERSITY HOSTELS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,7 +125,7 @@ namespace FirstApp
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(915, 480);
+            this.ClientSize = new System.Drawing.Size(886, 480);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
