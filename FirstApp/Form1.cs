@@ -18,28 +18,6 @@ namespace FirstApp
             InitializeComponent();
         }
 
-
-        private void button_click(object sender, EventArgs e)
-        {
-            MessageBox.Show("You are great!");
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();

@@ -120,7 +120,12 @@ namespace FirstApp
 
         private void addcmh_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cmh.Text);
+    
+        }
+
+        private void addnmh_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hey");
         }
     }
 }

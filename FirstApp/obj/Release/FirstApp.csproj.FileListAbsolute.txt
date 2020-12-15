@@ -9,3 +9,4 @@ D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.GenerateResource.cac
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.CoreCompileInputs.cache
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.exe
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.pdb
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.AddEntry.resources

@@ -29,6 +29,7 @@ namespace FirstApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.tab = new System.Windows.Forms.TabControl();
             this.cmh = new System.Windows.Forms.TabPage();
             this.removecmh = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace FirstApp
             this.pmh = new System.Windows.Forms.TabPage();
             this.removepmh = new System.Windows.Forms.Button();
             this.addpmh = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.search2 = new System.Windows.Forms.TextBox();
@@ -62,10 +62,12 @@ namespace FirstApp
             this.label4 = new System.Windows.Forms.Label();
             this.search3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.tab.SuspendLayout();
             this.cmh.SuspendLayout();
             this.nmh.SuspendLayout();
             this.pmh.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.nwh.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,7 +134,8 @@ namespace FirstApp
             // 
             // button1
             // 
-            this.button1.Image = global::FirstApp.Properties.Resources.search__1_;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Location = new System.Drawing.Point(335, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 31);
@@ -231,10 +234,12 @@ namespace FirstApp
             this.addnmh.TabIndex = 19;
             this.addnmh.Text = "Add entry";
             this.addnmh.UseVisualStyleBackColor = true;
+            this.addnmh.Click += new System.EventHandler(this.addnmh_Click);
             // 
             // button2
             // 
-            this.button2.Image = global::FirstApp.Properties.Resources.search__1_;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Location = new System.Drawing.Point(335, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 31);
@@ -297,7 +302,6 @@ namespace FirstApp
             this.pmh.BackColor = System.Drawing.Color.Teal;
             this.pmh.Controls.Add(this.removepmh);
             this.pmh.Controls.Add(this.addpmh);
-            this.pmh.Controls.Add(this.button3);
             this.pmh.Controls.Add(this.comboBox3);
             this.pmh.Controls.Add(this.label3);
             this.pmh.Controls.Add(this.search2);
@@ -330,15 +334,6 @@ namespace FirstApp
             this.addpmh.TabIndex = 19;
             this.addpmh.Text = "Add entry";
             this.addpmh.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = global::FirstApp.Properties.Resources.search__1_;
-            this.button3.Location = new System.Drawing.Point(335, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 31);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
@@ -385,6 +380,7 @@ namespace FirstApp
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Location = new System.Drawing.Point(2, -8);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(882, 58);
@@ -432,7 +428,8 @@ namespace FirstApp
             // 
             // button4
             // 
-            this.button4.Image = global::FirstApp.Properties.Resources.search__1_;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Location = new System.Drawing.Point(335, 10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(31, 31);
@@ -491,6 +488,16 @@ namespace FirstApp
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.Location = new System.Drawing.Point(333, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 31);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,6 +515,7 @@ namespace FirstApp
             this.nmh.PerformLayout();
             this.pmh.ResumeLayout(false);
             this.pmh.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.nwh.ResumeLayout(false);
             this.nwh.PerformLayout();
             this.ResumeLayout(false);
@@ -529,7 +537,6 @@ namespace FirstApp
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox search1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox search2;
@@ -549,5 +556,6 @@ namespace FirstApp
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button5;
     }
 }

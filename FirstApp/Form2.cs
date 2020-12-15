@@ -18,7 +18,7 @@ namespace FirstApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(this.password.Text == "p")
+            if(this.password.Text == "pass")
             {
                 data.v = 1;
                 Close();

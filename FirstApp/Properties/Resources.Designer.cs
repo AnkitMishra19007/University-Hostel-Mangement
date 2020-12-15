@@ -63,19 +63,9 @@ namespace FirstApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap loupe {
+        internal static System.Drawing.Bitmap maxresdefault1 {
             get {
-                object obj = ResourceManager.GetObject("loupe", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maxresdefault {
-            get {
-                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
+                object obj = ResourceManager.GetObject("maxresdefault1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,26 +86,6 @@ namespace FirstApp.Properties {
         internal static System.Drawing.Bitmap search__1_ {
             get {
                 object obj = ResourceManager.GetObject("search (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Tezpur_University {
-            get {
-                object obj = ResourceManager.GetObject("Tezpur-University", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap we {
-            get {
-                object obj = ResourceManager.GetObject("we", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

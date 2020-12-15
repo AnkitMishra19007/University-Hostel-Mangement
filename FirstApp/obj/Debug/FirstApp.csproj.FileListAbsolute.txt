@@ -10,3 +10,4 @@ D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.pdb
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.Form2.resources
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.Form3.resources
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.Form1.resources
+D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.AddEntry.resources
