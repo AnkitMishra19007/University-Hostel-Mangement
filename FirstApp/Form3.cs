@@ -141,5 +141,29 @@ namespace FirstApp
             AddEntry ad = new AddEntry();
             ad.ShowDialog();
         }
+
+        private void removecmh_Click(object sender, EventArgs e)
+        {
+            RemoveEntry re = new RemoveEntry();
+            re.ShowDialog();
+        }
+
+        private void removenmh_Click(object sender, EventArgs e)
+        {
+            RemoveEntry re = new RemoveEntry();
+            re.ShowDialog();
+        }
+
+        private void removepmh_Click(object sender, EventArgs e)
+        {
+            RemoveEntry re = new RemoveEntry();
+            re.ShowDialog();
+        }
+
+        private void removenwh_Click(object sender, EventArgs e)
+        {
+            RemoveEntry re = new RemoveEntry();
+            re.ShowDialog();
+        }
     }
 }

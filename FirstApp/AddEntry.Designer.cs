@@ -249,9 +249,9 @@ namespace FirstApp
             this.label9.ForeColor = System.Drawing.Color.SpringGreen;
             this.label9.Location = new System.Drawing.Point(395, 380);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 26);
+            this.label9.Size = new System.Drawing.Size(93, 26);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Address";
+            this.label9.Text = "IPL team";
             // 
             // AddEntry
             // 
