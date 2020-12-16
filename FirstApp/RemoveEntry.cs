@@ -42,5 +42,10 @@ namespace FirstApp
                 removeyear.Enabled = false;
             }
         }
+
+        private void RemoveEntry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

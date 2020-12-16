@@ -96,7 +96,7 @@ namespace FirstApp
             this.button5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button5.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.GreenYellow;
-            this.button5.Location = new System.Drawing.Point(384, 416);
+            this.button5.Location = new System.Drawing.Point(378, 416);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(135, 39);
             this.button5.TabIndex = 5;

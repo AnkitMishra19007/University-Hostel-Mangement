@@ -34,6 +34,7 @@ namespace FirstApp
             this.cmh = new System.Windows.Forms.TabPage();
             this.removecmh = new System.Windows.Forms.Button();
             this.addcmh = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.TextBox();
@@ -45,6 +46,7 @@ namespace FirstApp
             this.label2 = new System.Windows.Forms.Label();
             this.search1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.pmh = new System.Windows.Forms.TabPage();
             this.removepmh = new System.Windows.Forms.Button();
             this.addpmh = new System.Windows.Forms.Button();
@@ -52,6 +54,7 @@ namespace FirstApp
             this.label3 = new System.Windows.Forms.Label();
             this.search2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.nwh = new System.Windows.Forms.TabPage();
             this.removenwh = new System.Windows.Forms.Button();
             this.addnwh = new System.Windows.Forms.Button();
@@ -59,16 +62,17 @@ namespace FirstApp
             this.label4 = new System.Windows.Forms.Label();
             this.search3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tab.SuspendLayout();
             this.cmh.SuspendLayout();
             this.nmh.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.pmh.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.nwh.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab
@@ -132,6 +136,17 @@ namespace FirstApp
             this.addcmh.Text = "Add entry";
             this.addcmh.UseVisualStyleBackColor = true;
             this.addcmh.Click += new System.EventHandler(this.addcmh_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Location = new System.Drawing.Point(335, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 31);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -272,11 +287,22 @@ namespace FirstApp
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Location = new System.Drawing.Point(2, -8);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(882, 58);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Location = new System.Drawing.Point(335, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 8;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // pmh
             // 
@@ -370,6 +396,16 @@ namespace FirstApp
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.Location = new System.Drawing.Point(333, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 31);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // nwh
             // 
             this.nwh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -456,43 +492,13 @@ namespace FirstApp
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Location = new System.Drawing.Point(2, -8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(882, 58);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(335, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Location = new System.Drawing.Point(335, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 31);
-            this.button2.TabIndex = 8;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(333, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(31, 31);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -503,6 +509,26 @@ namespace FirstApp
             this.button4.Size = new System.Drawing.Size(31, 31);
             this.button4.TabIndex = 16;
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.Location = new System.Drawing.Point(333, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(31, 31);
+            this.button3.TabIndex = 23;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.Location = new System.Drawing.Point(333, 18);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(31, 31);
+            this.button6.TabIndex = 23;
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
@@ -519,11 +545,13 @@ namespace FirstApp
             this.cmh.PerformLayout();
             this.nmh.ResumeLayout(false);
             this.nmh.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.pmh.ResumeLayout(false);
             this.pmh.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.nwh.ResumeLayout(false);
             this.nwh.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -563,5 +591,7 @@ namespace FirstApp
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
     }
 }
