@@ -12,3 +12,7 @@ D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.Form3.resources
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.Form1.resources
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.AddEntry.resources
 D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.RemoveEntry.resources
+D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.cmh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.nmh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.nwh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Debug\FirstApp.pmh.resources

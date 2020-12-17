@@ -45,9 +45,9 @@ namespace FirstApp
             this.button1 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -233,15 +233,6 @@ namespace FirstApp
             this.label4.TabIndex = 17;
             this.label4.Text = "Year of\r\npassing";
             // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(462, 194);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(160, 27);
-            this.textBox6.TabIndex = 20;
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -251,19 +242,33 @@ namespace FirstApp
             this.label9.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label9.Location = new System.Drawing.Point(395, 282);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 26);
+            this.label9.Size = new System.Drawing.Size(79, 26);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Branch";
+            this.label9.Text = "Gender";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SlateGray;
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Location = new System.Drawing.Point(31, 82);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(642, 355);
             this.panel1.TabIndex = 21;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox2.Location = new System.Drawing.Point(462, 197);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(160, 27);
+            this.comboBox2.TabIndex = 16;
             // 
             // AddEntry
             // 
@@ -292,7 +297,6 @@ namespace FirstApp
             this.Name = "AddEntry";
             this.Text = "Add Entry";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,8 +320,8 @@ namespace FirstApp
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

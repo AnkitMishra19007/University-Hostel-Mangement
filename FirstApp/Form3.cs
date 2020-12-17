@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FirstApp
 {
@@ -16,37 +17,6 @@ namespace FirstApp
         {
             InitializeComponent();
         }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void search_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void search_Enter(object sender, EventArgs e)
         {
             if(search.Text == "search here")
@@ -120,24 +90,84 @@ namespace FirstApp
 
         private void addcmh_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"select count(Room) from vacant", con);
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (!reader.HasRows)
+                {
+                    /*reader.Read();
+                    total = reader.GetInt32(0);*/
+                    MessageBox.Show("No Rooms are vacant now!!!");
+                }
+            }
+            /*cmd.ExecuteNonQuery();*/
+            con.Close();
+
             AddEntry ad = new AddEntry();
             ad.ShowDialog();
         }
 
         private void addnmh_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"select count(Room) from vacant", con);
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (!reader.HasRows)
+                {
+                    /*reader.Read();
+                    total = reader.GetInt32(0);*/
+                    MessageBox.Show("No Rooms are vacant now!!!");
+                }
+            }
+            /*cmd.ExecuteNonQuery();*/
+            con.Close();
+
             AddEntry ad = new AddEntry();
             ad.ShowDialog();
         }
 
         private void addpmh_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"select count(Room) from vacant", con);
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (!reader.HasRows)
+                {
+                    /*reader.Read();
+                    total = reader.GetInt32(0);*/
+                    MessageBox.Show("No Rooms are vacant now!!!");
+                }
+            }
+            /*cmd.ExecuteNonQuery();*/
+            con.Close();
+
             AddEntry ad = new AddEntry();
             ad.ShowDialog();
         }
 
         private void addnwh_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand(@"select count(Room) from vacant", con);
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (!reader.HasRows)
+                {
+                    /*reader.Read();
+                    total = reader.GetInt32(0);*/
+                    MessageBox.Show("No Rooms are vacant now!!!");
+                }
+            }
+            /*cmd.ExecuteNonQuery();*/
+            con.Close();
+
             AddEntry ad = new AddEntry();
             ad.ShowDialog();
         }
@@ -164,6 +194,11 @@ namespace FirstApp
         {
             RemoveEntry re = new RemoveEntry();
             re.ShowDialog();
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

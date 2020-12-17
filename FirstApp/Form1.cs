@@ -20,6 +20,7 @@ namespace FirstApp
 
         private void button5_Click(object sender, EventArgs e)
         {
+
             Form2 f2 = new Form2();
             f2.ShowDialog();
             if (data.v == 1)
@@ -29,6 +30,30 @@ namespace FirstApp
                 f3.Show();                
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cmh cmh = new cmh();
+            cmh.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            nmh nmh = new nmh();
+            nmh.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            nwh nwh = new nwh();
+            nwh.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pmh pmh = new pmh();
+            pmh.Show();
         }
     }
     public static class data

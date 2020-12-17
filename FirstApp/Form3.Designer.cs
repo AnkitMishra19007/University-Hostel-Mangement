@@ -34,7 +34,6 @@ namespace FirstApp
             this.cmh = new System.Windows.Forms.TabPage();
             this.removecmh = new System.Windows.Forms.Button();
             this.addcmh = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.TextBox();
@@ -46,7 +45,6 @@ namespace FirstApp
             this.label2 = new System.Windows.Forms.Label();
             this.search1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.pmh = new System.Windows.Forms.TabPage();
             this.removepmh = new System.Windows.Forms.Button();
             this.addpmh = new System.Windows.Forms.Button();
@@ -54,7 +52,6 @@ namespace FirstApp
             this.label3 = new System.Windows.Forms.Label();
             this.search2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.nwh = new System.Windows.Forms.TabPage();
             this.removenwh = new System.Windows.Forms.Button();
             this.addnwh = new System.Windows.Forms.Button();
@@ -62,9 +59,12 @@ namespace FirstApp
             this.label4 = new System.Windows.Forms.Label();
             this.search3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tab.SuspendLayout();
             this.cmh.SuspendLayout();
             this.nmh.SuspendLayout();
@@ -137,17 +137,6 @@ namespace FirstApp
             this.addcmh.UseVisualStyleBackColor = true;
             this.addcmh.Click += new System.EventHandler(this.addcmh_Click);
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(335, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -157,13 +146,12 @@ namespace FirstApp
             this.comboBox1.Items.AddRange(new object[] {
             "Name",
             "Roll No.",
-            "Branch",
+            "Dept",
             "Address"});
             this.comboBox1.Location = new System.Drawing.Point(190, 9);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(139, 31);
             this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -251,7 +239,7 @@ namespace FirstApp
             this.comboBox2.Items.AddRange(new object[] {
             "Name",
             "Roll No.",
-            "Branch",
+            "Dept",
             "Address"});
             this.comboBox2.Location = new System.Drawing.Point(190, 9);
             this.comboBox2.Name = "comboBox2";
@@ -293,16 +281,6 @@ namespace FirstApp
             this.groupBox2.Size = new System.Drawing.Size(882, 58);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Location = new System.Drawing.Point(335, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 31);
-            this.button2.TabIndex = 8;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // pmh
             // 
@@ -353,7 +331,7 @@ namespace FirstApp
             this.comboBox3.Items.AddRange(new object[] {
             "Name",
             "Roll No.",
-            "Branch",
+            "Dept",
             "Address"});
             this.comboBox3.Location = new System.Drawing.Point(190, 9);
             this.comboBox3.Name = "comboBox3";
@@ -395,16 +373,6 @@ namespace FirstApp
             this.groupBox3.Size = new System.Drawing.Size(882, 58);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(333, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(31, 31);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // nwh
             // 
@@ -456,7 +424,7 @@ namespace FirstApp
             this.comboBox4.Items.AddRange(new object[] {
             "Name",
             "Roll No.",
-            "Branch",
+            "Dept",
             "Address"});
             this.comboBox4.Location = new System.Drawing.Point(190, 9);
             this.comboBox4.Name = "comboBox4";
@@ -498,27 +466,17 @@ namespace FirstApp
             this.groupBox1.Size = new System.Drawing.Size(882, 58);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button4
+            // button1
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.Location = new System.Drawing.Point(335, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(31, 31);
-            this.button4.TabIndex = 16;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Location = new System.Drawing.Point(333, 18);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 31);
-            this.button3.TabIndex = 23;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Location = new System.Drawing.Point(335, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 31);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -530,6 +488,46 @@ namespace FirstApp
             this.button6.TabIndex = 23;
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Location = new System.Drawing.Point(335, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 31);
+            this.button2.TabIndex = 8;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.Location = new System.Drawing.Point(333, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 31);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.Location = new System.Drawing.Point(333, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(31, 31);
+            this.button3.TabIndex = 23;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.Location = new System.Drawing.Point(335, 10);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(31, 31);
+            this.button4.TabIndex = 16;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,7 +537,7 @@ namespace FirstApp
             this.Controls.Add(this.tab);
             this.Name = "Form3";
             this.Text = "Admin- Hostel database";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tab.ResumeLayout(false);
             this.cmh.ResumeLayout(false);
             this.cmh.PerformLayout();

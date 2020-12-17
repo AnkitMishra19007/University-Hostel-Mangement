@@ -44,12 +44,13 @@ namespace FirstApp
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(342, 107);
+            this.button1.Location = new System.Drawing.Point(304, 106);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 41);
+            this.button1.Size = new System.Drawing.Size(282, 41);
             this.button1.TabIndex = 1;
             this.button1.Text = "Charaideo Mens Hostel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -57,12 +58,13 @@ namespace FirstApp
             this.button2.BackColor = System.Drawing.Color.Olive;
             this.button2.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(342, 179);
+            this.button2.Location = new System.Drawing.Point(304, 178);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 41);
+            this.button2.Size = new System.Drawing.Size(282, 41);
             this.button2.TabIndex = 2;
             this.button2.Text = "Nilachal Mens Hostel";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -70,12 +72,13 @@ namespace FirstApp
             this.button3.BackColor = System.Drawing.Color.Teal;
             this.button3.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(342, 255);
+            this.button3.Location = new System.Drawing.Point(304, 254);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 41);
+            this.button3.Size = new System.Drawing.Size(282, 41);
             this.button3.TabIndex = 3;
             this.button3.Text = "Patkai Mens Hostel";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -83,12 +86,13 @@ namespace FirstApp
             this.button4.BackColor = System.Drawing.Color.Navy;
             this.button4.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(342, 331);
+            this.button4.Location = new System.Drawing.Point(304, 330);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 41);
+            this.button4.Size = new System.Drawing.Size(282, 41);
             this.button4.TabIndex = 4;
             this.button4.Text = "New womens Hostel";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
