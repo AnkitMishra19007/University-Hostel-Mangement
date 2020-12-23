@@ -30,12 +30,14 @@ namespace FirstApp
                 f3.Show();                
             }
 
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             cmh cmh = new cmh();
             cmh.Show();
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +56,11 @@ namespace FirstApp
         {
             pmh pmh = new pmh();
             pmh.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
     public static class data
