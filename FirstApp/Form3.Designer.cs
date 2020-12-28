@@ -91,20 +91,14 @@ namespace FirstApp
             this.label18 = new System.Windows.Forms.Label();
             this.cmh = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Person = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PassoutYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nmh = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -116,6 +110,8 @@ namespace FirstApp
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -133,6 +129,8 @@ namespace FirstApp
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -149,6 +147,8 @@ namespace FirstApp
             this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -156,6 +156,14 @@ namespace FirstApp
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Person = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PassoutYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -166,16 +174,24 @@ namespace FirstApp
             this.panel3.SuspendLayout();
             this.cmh.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.nmh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pmh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.nwh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tab
@@ -748,6 +764,8 @@ namespace FirstApp
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.pictureBox5);
+            this.groupBox4.Controls.Add(this.pictureBox1);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.search);
@@ -755,18 +773,40 @@ namespace FirstApp
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Location = new System.Drawing.Point(2, -8);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1056, 58);
+            this.groupBox4.Size = new System.Drawing.Size(1056, 102);
             this.groupBox4.TabIndex = 21;
             this.groupBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::FirstApp.Properties.Resources.lion;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(484, 16);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox5.TabIndex = 31;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::FirstApp.Properties.Resources.lion;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(304, 16);
+            this.label5.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(108, 34);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(306, 36);
+            this.label5.Size = new System.Drawing.Size(369, 42);
             this.label5.TabIndex = 22;
             this.label5.Text = "Charaideo Mens Hostel";
             // 
@@ -782,7 +822,7 @@ namespace FirstApp
             "Name",
             "Roll No.",
             "Dept"});
-            this.comboBox1.Location = new System.Drawing.Point(874, 18);
+            this.comboBox1.Location = new System.Drawing.Point(874, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(139, 31);
             this.comboBox1.TabIndex = 3;
@@ -791,8 +831,8 @@ namespace FirstApp
             // 
             this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.search.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.ForeColor = System.Drawing.Color.Gray;
-            this.search.Location = new System.Drawing.Point(699, 18);
+            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.search.Location = new System.Drawing.Point(699, 38);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(137, 31);
             this.search.TabIndex = 0;
@@ -808,7 +848,7 @@ namespace FirstApp
             this.label1.BackColor = System.Drawing.Color.Gray;
             this.label1.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(836, 19);
+            this.label1.Location = new System.Drawing.Point(836, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 29);
             this.label1.TabIndex = 2;
@@ -819,7 +859,7 @@ namespace FirstApp
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(1014, 18);
+            this.button1.Location = new System.Drawing.Point(1014, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 31);
             this.button1.TabIndex = 4;
@@ -870,7 +910,7 @@ namespace FirstApp
             this.dataGridView2.Enabled = false;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView2.Location = new System.Drawing.Point(2, 51);
+            this.dataGridView2.Location = new System.Drawing.Point(2, 92);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -900,81 +940,9 @@ namespace FirstApp
             this.dataGridView2.ShowCellToolTips = false;
             this.dataGridView2.ShowEditingIcon = false;
             this.dataGridView2.ShowRowErrors = false;
-            this.dataGridView2.Size = new System.Drawing.Size(1058, 444);
+            this.dataGridView2.Size = new System.Drawing.Size(1058, 403);
             this.dataGridView2.TabIndex = 30;
             this.dataGridView2.TabStop = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Room";
-            this.dataGridViewTextBoxColumn1.FillWeight = 58.73098F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Room";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Person
-            // 
-            this.Person.DataPropertyName = "Person";
-            this.Person.FillWeight = 132.0598F;
-            this.Person.HeaderText = "Name";
-            this.Person.Name = "Person";
-            this.Person.ReadOnly = true;
-            this.Person.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Roll";
-            this.dataGridViewTextBoxColumn2.FillWeight = 82.14899F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Roll No";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Dept";
-            this.dataGridViewTextBoxColumn3.FillWeight = 87.00503F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Dept";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.FillWeight = 154.2831F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn6.FillWeight = 85.60544F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Phone";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Addr";
-            this.dataGridViewTextBoxColumn7.FillWeight = 156.9664F;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PassoutYear
-            // 
-            this.PassoutYear.DataPropertyName = "PassoutYear";
-            this.PassoutYear.FillWeight = 58.77412F;
-            this.PassoutYear.HeaderText = "YOP";
-            this.PassoutYear.Name = "PassoutYear";
-            this.PassoutYear.ReadOnly = true;
-            this.PassoutYear.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // nmh
             // 
@@ -1006,7 +974,7 @@ namespace FirstApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView3.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -1032,7 +1000,7 @@ namespace FirstApp
             this.dataGridView3.Enabled = false;
             this.dataGridView3.EnableHeadersVisualStyles = false;
             this.dataGridView3.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView3.Location = new System.Drawing.Point(2, 51);
+            this.dataGridView3.Location = new System.Drawing.Point(2, 92);
             this.dataGridView3.MultiSelect = false;
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
@@ -1062,7 +1030,7 @@ namespace FirstApp
             this.dataGridView3.ShowCellToolTips = false;
             this.dataGridView3.ShowEditingIcon = false;
             this.dataGridView3.ShowRowErrors = false;
-            this.dataGridView3.Size = new System.Drawing.Size(1058, 444);
+            this.dataGridView3.Size = new System.Drawing.Size(1058, 403);
             this.dataGridView3.TabIndex = 31;
             this.dataGridView3.TabStop = false;
             // 
@@ -1142,7 +1110,9 @@ namespace FirstApp
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.groupBox2.Controls.Add(this.pictureBox6);
+            this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.comboBox2);
@@ -1150,19 +1120,41 @@ namespace FirstApp
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(2, -8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1056, 58);
+            this.groupBox2.Size = new System.Drawing.Size(1056, 102);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::FirstApp.Properties.Resources.snake;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.InitialImage = null;
+            this.pictureBox6.Location = new System.Drawing.Point(484, 16);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox6.TabIndex = 33;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::FirstApp.Properties.Resources.snake;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(327, 16);
+            this.label6.Location = new System.Drawing.Point(124, 34);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 36);
+            this.label6.Size = new System.Drawing.Size(341, 42);
             this.label6.TabIndex = 24;
             this.label6.Text = "Nilachal Mens Hostel";
             // 
@@ -1171,7 +1163,7 @@ namespace FirstApp
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button6.Location = new System.Drawing.Point(1014, 18);
+            this.button6.Location = new System.Drawing.Point(1014, 38);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(31, 31);
             this.button6.TabIndex = 23;
@@ -1190,7 +1182,7 @@ namespace FirstApp
             "Name",
             "Roll No.",
             "Dept"});
-            this.comboBox2.Location = new System.Drawing.Point(874, 18);
+            this.comboBox2.Location = new System.Drawing.Point(874, 38);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(139, 31);
             this.comboBox2.TabIndex = 7;
@@ -1199,8 +1191,8 @@ namespace FirstApp
             // 
             this.search1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.search1.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search1.ForeColor = System.Drawing.Color.Gray;
-            this.search1.Location = new System.Drawing.Point(699, 18);
+            this.search1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.search1.Location = new System.Drawing.Point(699, 38);
             this.search1.Name = "search1";
             this.search1.Size = new System.Drawing.Size(137, 31);
             this.search1.TabIndex = 5;
@@ -1215,7 +1207,7 @@ namespace FirstApp
             this.label2.BackColor = System.Drawing.Color.Gray;
             this.label2.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(836, 19);
+            this.label2.Location = new System.Drawing.Point(836, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 29);
             this.label2.TabIndex = 6;
@@ -1250,25 +1242,25 @@ namespace FirstApp
             this.dataGridView4.AllowUserToDeleteRows = false;
             this.dataGridView4.AllowUserToResizeColumns = false;
             this.dataGridView4.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.Teal;
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(129)))), ((int)(((byte)(4)))));
             this.dataGridView4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView4.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView4.ColumnHeadersHeight = 28;
@@ -1286,7 +1278,7 @@ namespace FirstApp
             this.dataGridView4.Enabled = false;
             this.dataGridView4.EnableHeadersVisualStyles = false;
             this.dataGridView4.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView4.Location = new System.Drawing.Point(2, 51);
+            this.dataGridView4.Location = new System.Drawing.Point(2, 92);
             this.dataGridView4.MultiSelect = false;
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
@@ -1302,11 +1294,11 @@ namespace FirstApp
             this.dataGridView4.RowHeadersWidth = 45;
             this.dataGridView4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle14.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView4.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView4.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView4.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1316,7 +1308,7 @@ namespace FirstApp
             this.dataGridView4.ShowCellToolTips = false;
             this.dataGridView4.ShowEditingIcon = false;
             this.dataGridView4.ShowRowErrors = false;
-            this.dataGridView4.Size = new System.Drawing.Size(1058, 444);
+            this.dataGridView4.Size = new System.Drawing.Size(1058, 403);
             this.dataGridView4.TabIndex = 32;
             this.dataGridView4.TabStop = false;
             // 
@@ -1396,7 +1388,9 @@ namespace FirstApp
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(129)))), ((int)(((byte)(4)))));
+            this.groupBox3.Controls.Add(this.pictureBox7);
+            this.groupBox3.Controls.Add(this.pictureBox3);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.comboBox3);
@@ -1404,19 +1398,41 @@ namespace FirstApp
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(2, -8);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1056, 58);
+            this.groupBox3.Size = new System.Drawing.Size(1056, 102);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::FirstApp.Properties.Resources.badger;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.InitialImage = null;
+            this.pictureBox7.Location = new System.Drawing.Point(11, 16);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox7.TabIndex = 34;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::FirstApp.Properties.Resources.badger;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(484, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox3.TabIndex = 33;
+            this.pictureBox3.TabStop = false;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(352, 16);
+            this.label7.Location = new System.Drawing.Point(132, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(257, 36);
+            this.label7.Size = new System.Drawing.Size(310, 42);
             this.label7.TabIndex = 23;
             this.label7.Text = "Patkai Mens Hostel";
             // 
@@ -1425,7 +1441,7 @@ namespace FirstApp
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(1014, 18);
+            this.button5.Location = new System.Drawing.Point(1014, 38);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(31, 31);
             this.button5.TabIndex = 22;
@@ -1444,7 +1460,7 @@ namespace FirstApp
             "Name",
             "Roll No.",
             "Dept"});
-            this.comboBox3.Location = new System.Drawing.Point(873, 18);
+            this.comboBox3.Location = new System.Drawing.Point(874, 38);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(139, 31);
             this.comboBox3.TabIndex = 11;
@@ -1453,8 +1469,8 @@ namespace FirstApp
             // 
             this.search2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.search2.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search2.ForeColor = System.Drawing.Color.Gray;
-            this.search2.Location = new System.Drawing.Point(698, 18);
+            this.search2.ForeColor = System.Drawing.Color.Olive;
+            this.search2.Location = new System.Drawing.Point(699, 38);
             this.search2.Name = "search2";
             this.search2.Size = new System.Drawing.Size(137, 31);
             this.search2.TabIndex = 9;
@@ -1469,7 +1485,7 @@ namespace FirstApp
             this.label3.BackColor = System.Drawing.Color.Gray;
             this.label3.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(835, 19);
+            this.label3.Location = new System.Drawing.Point(836, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 29);
             this.label3.TabIndex = 10;
@@ -1505,7 +1521,7 @@ namespace FirstApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.dataGridView5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(79)))));
             this.dataGridView5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView5.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -1531,7 +1547,7 @@ namespace FirstApp
             this.dataGridView5.Enabled = false;
             this.dataGridView5.EnableHeadersVisualStyles = false;
             this.dataGridView5.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView5.Location = new System.Drawing.Point(2, 51);
+            this.dataGridView5.Location = new System.Drawing.Point(2, 92);
             this.dataGridView5.MultiSelect = false;
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.ReadOnly = true;
@@ -1562,7 +1578,7 @@ namespace FirstApp
             this.dataGridView5.ShowCellToolTips = false;
             this.dataGridView5.ShowEditingIcon = false;
             this.dataGridView5.ShowRowErrors = false;
-            this.dataGridView5.Size = new System.Drawing.Size(1058, 444);
+            this.dataGridView5.Size = new System.Drawing.Size(1058, 403);
             this.dataGridView5.TabIndex = 33;
             this.dataGridView5.TabStop = false;
             // 
@@ -1642,7 +1658,9 @@ namespace FirstApp
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(79)))));
+            this.groupBox1.Controls.Add(this.pictureBox8);
+            this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.comboBox4);
@@ -1650,19 +1668,41 @@ namespace FirstApp
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(2, -8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1056, 58);
+            this.groupBox1.Size = new System.Drawing.Size(1056, 102);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::FirstApp.Properties.Resources.eagle;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.InitialImage = null;
+            this.pictureBox8.Location = new System.Drawing.Point(484, 17);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox8.TabIndex = 34;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::FirstApp.Properties.Resources.eagle;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(11, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox4.TabIndex = 33;
+            this.pictureBox4.TabStop = false;
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(331, 16);
+            this.label8.Location = new System.Drawing.Point(132, 34);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(278, 36);
+            this.label8.Size = new System.Drawing.Size(333, 42);
             this.label8.TabIndex = 23;
             this.label8.Text = "New Womens Hostel";
             // 
@@ -1671,7 +1711,7 @@ namespace FirstApp
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Location = new System.Drawing.Point(1014, 18);
+            this.button3.Location = new System.Drawing.Point(1014, 38);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 31);
             this.button3.TabIndex = 23;
@@ -1690,7 +1730,7 @@ namespace FirstApp
             "Name",
             "Roll No.",
             "Dept"});
-            this.comboBox4.Location = new System.Drawing.Point(873, 18);
+            this.comboBox4.Location = new System.Drawing.Point(874, 38);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(139, 31);
             this.comboBox4.TabIndex = 15;
@@ -1699,8 +1739,8 @@ namespace FirstApp
             // 
             this.search3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.search3.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search3.ForeColor = System.Drawing.Color.Gray;
-            this.search3.Location = new System.Drawing.Point(698, 18);
+            this.search3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.search3.Location = new System.Drawing.Point(699, 38);
             this.search3.Name = "search3";
             this.search3.Size = new System.Drawing.Size(137, 31);
             this.search3.TabIndex = 13;
@@ -1715,7 +1755,7 @@ namespace FirstApp
             this.label4.BackColor = System.Drawing.Color.Gray;
             this.label4.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(835, 19);
+            this.label4.Location = new System.Drawing.Point(836, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 29);
             this.label4.TabIndex = 14;
@@ -1739,6 +1779,78 @@ namespace FirstApp
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Remove Entry";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Room";
+            this.dataGridViewTextBoxColumn1.FillWeight = 58.73098F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Room";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Person
+            // 
+            this.Person.DataPropertyName = "Person";
+            this.Person.FillWeight = 132.0598F;
+            this.Person.HeaderText = "Name";
+            this.Person.Name = "Person";
+            this.Person.ReadOnly = true;
+            this.Person.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Roll";
+            this.dataGridViewTextBoxColumn2.FillWeight = 82.14899F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Roll No";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Dept";
+            this.dataGridViewTextBoxColumn3.FillWeight = 87.00503F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Dept";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn5.FillWeight = 154.2831F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn6.FillWeight = 85.60544F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Phone";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Addr";
+            this.dataGridViewTextBoxColumn7.FillWeight = 156.9664F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PassoutYear
+            // 
+            this.PassoutYear.DataPropertyName = "PassoutYear";
+            this.PassoutYear.FillWeight = 58.77412F;
+            this.PassoutYear.HeaderText = "YOP";
+            this.PassoutYear.Name = "PassoutYear";
+            this.PassoutYear.ReadOnly = true;
+            this.PassoutYear.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1746,6 +1858,7 @@ namespace FirstApp
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1067, 540);
             this.Controls.Add(this.tab);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Admin- Hostel database";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
@@ -1766,19 +1879,27 @@ namespace FirstApp
             this.cmh.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.nmh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pmh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.nwh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1861,14 +1982,6 @@ namespace FirstApp
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Person;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PassoutYear;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
@@ -1893,5 +2006,21 @@ namespace FirstApp
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Person;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PassoutYear;
     }
 }

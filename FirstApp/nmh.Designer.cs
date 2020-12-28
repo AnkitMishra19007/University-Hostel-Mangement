@@ -39,6 +39,7 @@ namespace FirstApp
             this.search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -50,8 +51,11 @@ namespace FirstApp
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PassoutYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -66,7 +70,7 @@ namespace FirstApp
             "Name",
             "Roll No.",
             "Dept"});
-            this.comboBox1.Location = new System.Drawing.Point(814, 16);
+            this.comboBox1.Location = new System.Drawing.Point(814, 35);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(139, 31);
             this.comboBox1.TabIndex = 24;
@@ -77,7 +81,7 @@ namespace FirstApp
             this.search.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.search.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.Gray;
-            this.search.Location = new System.Drawing.Point(639, 16);
+            this.search.Location = new System.Drawing.Point(639, 35);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(137, 31);
             this.search.TabIndex = 22;
@@ -93,7 +97,7 @@ namespace FirstApp
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(776, 17);
+            this.label1.Location = new System.Drawing.Point(776, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 29);
             this.label1.TabIndex = 23;
@@ -104,6 +108,8 @@ namespace FirstApp
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.pictureBox1);
+            this.groupBox4.Controls.Add(this.pictureBox2);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.button1);
@@ -111,18 +117,29 @@ namespace FirstApp
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Location = new System.Drawing.Point(2, -2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1003, 58);
+            this.groupBox4.Size = new System.Drawing.Size(1003, 102);
             this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::FirstApp.Properties.Resources.snake;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Constantia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label2.Location = new System.Drawing.Point(8, 15);
+            this.label2.Location = new System.Drawing.Point(103, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 33);
+            this.label2.Size = new System.Drawing.Size(341, 42);
             this.label2.TabIndex = 29;
             this.label2.Text = "Nilachal Mens Hostel";
             // 
@@ -131,7 +148,7 @@ namespace FirstApp
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(959, 17);
+            this.button1.Location = new System.Drawing.Point(959, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 31);
             this.button1.TabIndex = 25;
@@ -189,7 +206,7 @@ namespace FirstApp
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Enabled = false;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 92);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -219,7 +236,7 @@ namespace FirstApp
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.ShowRowErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(1003, 414);
+            this.dataGridView1.Size = new System.Drawing.Size(1003, 378);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.TabStop = false;
             // 
@@ -295,6 +312,17 @@ namespace FirstApp
             this.PassoutYear.ReadOnly = true;
             this.PassoutYear.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::FirstApp.Properties.Resources.snake;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(448, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 80);
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // nmh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,12 +331,15 @@ namespace FirstApp
             this.ClientSize = new System.Drawing.Size(1006, 471);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "nmh";
             this.Text = "nmh";
             this.Load += new System.EventHandler(this.nmh_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +361,7 @@ namespace FirstApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Addr;
         private System.Windows.Forms.DataGridViewTextBoxColumn PassoutYear;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

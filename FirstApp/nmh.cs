@@ -46,7 +46,7 @@ namespace FirstApp
             comboBox1.SelectedIndex = 0;
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
             con.Open();
-            SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from info where Hostel='NMH'", con);
+            SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from boarders_info where Hostel='NMH' order by Room", con);
             DataTable dtbl = new DataTable();
             sqlda.Fill(dtbl);
             dataGridView1.AutoGenerateColumns = false;
@@ -60,7 +60,7 @@ namespace FirstApp
             con.Open();
             if (comboBox1.SelectedIndex == 1)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Person like '%" + search.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Person like '%" + search.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView1.AutoGenerateColumns = false;
@@ -68,7 +68,7 @@ namespace FirstApp
             }
             else if (comboBox1.SelectedIndex == 2)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Roll like '%" + search.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Roll like '%" + search.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView1.AutoGenerateColumns = false;
@@ -76,7 +76,15 @@ namespace FirstApp
             }
             else if (comboBox1.SelectedIndex == 3)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Dept like '%" + search.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Dept like '%" + search.Text + "%' order by Room", con);
+                DataTable dtbl = new DataTable();
+                sqlda.Fill(dtbl);
+                dataGridView1.AutoGenerateColumns = false;
+                dataGridView1.DataSource = dtbl;
+            }
+            else
+            {
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView1.AutoGenerateColumns = false;

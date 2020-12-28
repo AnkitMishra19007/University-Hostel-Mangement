@@ -9,4 +9,8 @@ D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.GenerateResource.cac
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csproj.CoreCompileInputs.cache
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.exe
 D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.pdb
-D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.AddEntry.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.csprojAssemblyReference.cache
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.cmh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.nmh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.nwh.resources
+D:\C# Project\FirstApp\FirstApp\obj\Release\FirstApp.pmh.resources

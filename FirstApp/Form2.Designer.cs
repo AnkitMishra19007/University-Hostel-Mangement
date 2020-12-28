@@ -29,6 +29,7 @@ namespace FirstApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.password = new System.Windows.Forms.TextBox();
@@ -68,11 +69,14 @@ namespace FirstApp
             this.password.Size = new System.Drawing.Size(127, 23);
             this.password.TabIndex = 2;
             this.password.UseSystemPasswordChar = true;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(157, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 23);
@@ -83,12 +87,13 @@ namespace FirstApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(532, 313);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.password);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Admin Login";
             this.Load += new System.EventHandler(this.Form2_Load);

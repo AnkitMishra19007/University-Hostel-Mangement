@@ -55,7 +55,7 @@ namespace FirstApp
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.Color.Olive;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(304, 178);
@@ -69,7 +69,7 @@ namespace FirstApp
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button3.BackColor = System.Drawing.Color.Teal;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(129)))), ((int)(((byte)(4)))));
             this.button3.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(304, 254);
@@ -137,6 +137,7 @@ namespace FirstApp
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Tezpur University Hostels";
             this.Load += new System.EventHandler(this.Form1_Load);

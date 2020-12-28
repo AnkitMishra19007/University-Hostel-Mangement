@@ -113,48 +113,56 @@ namespace FirstApp
                     SqlCommand cmd1 = new SqlCommand("select TOP 1* from vacant where Hostel='NWH' order by Room", con);
                     using (SqlDataReader reader = cmd1.ExecuteReader())
                     {   //If rooms are available
-                        if (reader.HasRows)
+                        try
                         {
-                            reader.Read();
-                            vacantRoom = reader.GetInt32(1);
-                            Inhostel = reader.GetString(0);
-                            SqlCommand cmd2 = new SqlCommand("delete from vacant where Hostel='" + Inhostel + "' and Room='" + vacantRoom + "'", con);
-                            cmd2.ExecuteNonQuery();
-                            SqlCommand cmd = new SqlCommand(@"insert into info (Hostel, Room,Person, Roll, Dept, Gender, Email,Phone,Addr,PassoutYear) Values ('" + Inhostel + "','" + vacantRoom + "','" + name.Text + "','" + roll.Text + "', '" + dept.SelectedItem.ToString() + "' ,'" + gender.SelectedItem.ToString() + "','" + email.Text + "','" + phone.Text + "','" + addr.Text + "','" + year + "')", con);
-                            cmd.ExecuteNonQuery();
-                            con.Close();
-                            reader.Close();
-                            DialogResult result = MessageBox.Show("Room " + vacantRoom.ToString() + " in " + Inhostel.ToString() + " has been alloted", "Notification", MessageBoxButtons.OK);
-                            if (result == DialogResult.OK)
-                            {   //clearing all the entries
-                                name.Text = "";
-                                email.Text = "";
-                                dept.SelectedIndex = 0;
-                                gender.SelectedIndex = 0;
-                                phone.Text = "";
-                                addr.Text = "";
-                                yop.Text = "";
-                                roll.Text = "";
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                vacantRoom = reader.GetInt32(1);//room
+                                Inhostel = reader.GetString(0);//hostel
+                                SqlCommand cmd2 = new SqlCommand("delete from vacant where Hostel='" + Inhostel + "' and Room='" + vacantRoom + "'", con);
+                                cmd2.ExecuteNonQuery();
+                                SqlCommand cmd = new SqlCommand(@"insert into boarders_info (Hostel, Room,Person, Roll, Dept, Gender, Email,Phone,Addr,PassoutYear) Values ('" + Inhostel + "','" + vacantRoom + "','" + name.Text + "','" + roll.Text + "', '" + dept.SelectedItem.ToString() + "' ,'" + gender.SelectedItem.ToString() + "','" + email.Text + "','" + phone.Text + "','" + addr.Text + "','" + year + "')", con);
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                                reader.Close();
+                                DialogResult result = MessageBox.Show("Room " + vacantRoom.ToString() + " in " + Inhostel.ToString() + " has been alloted", "Notification", MessageBoxButtons.OK); 
+                                if (result == DialogResult.OK)
+                                {   //clearing all the entries
+                                    name.Text = "";
+                                    email.Text = "";
+                                    dept.SelectedIndex = 0;
+                                    gender.SelectedIndex = 0;
+                                    phone.Text = "";
+                                    addr.Text = "";
+                                    yop.Text = "";
+                                    roll.Text = "";
+                                }
+                            }
+                            //If rooms are not available
+                            else
+                            {
+                                con.Close();
+                                reader.Close();
+                                DialogResult result = MessageBox.Show("No Women's rooms are empty!");
+                                if (result == DialogResult.OK)
+                                {   //clearing all the entries
+                                    name.Text = "";
+                                    email.Text = "";
+                                    dept.SelectedIndex = 0;
+                                    gender.SelectedIndex = 0;
+                                    phone.Text = "";
+                                    addr.Text = "";
+                                    yop.Text = "";
+                                    roll.Text = "";
+                                }
                             }
                         }
-                        //If rooms are not available
-                        else
+                        catch (SqlException ex) when (ex.Number == 2627)
                         {
-                            con.Close();
-                            reader.Close();
-                            DialogResult result = MessageBox.Show("No Women's rooms are empty!");
-                            if (result == DialogResult.OK)
-                            {   //clearing all the entries
-                                name.Text = "";
-                                email.Text = "";
-                                dept.SelectedIndex = 0;
-                                gender.SelectedIndex = 0;
-                                phone.Text = "";
-                                addr.Text = "";
-                                yop.Text = "";
-                                roll.Text = "";
-                            }
+                            MessageBox.Show("This Roll number already exists!", "Warning");
                         }
+
                     }
                 }
 
@@ -166,47 +174,54 @@ namespace FirstApp
                     SqlCommand cmd1 = new SqlCommand("select TOP 1* from vacant where Hostel!='NWH' order by Hostel, Room", con);
                     using (SqlDataReader reader = cmd1.ExecuteReader())
                     {   //if rooms are available
-                        if (reader.HasRows)
+                        try
                         {
-                            reader.Read();
-                            vacantRoom = reader.GetInt32(1);
-                            Inhostel = reader.GetString(0);
-                            SqlCommand cmd2 = new SqlCommand("delete from vacant where Hostel='" + Inhostel + "' and Room='" + vacantRoom + "'", con);
-                            cmd2.ExecuteNonQuery();
-                            SqlCommand cmd = new SqlCommand(@"insert into info (Hostel, Room,Person, Roll, Dept, Gender, Email,Phone,Addr,PassoutYear) Values ('" + Inhostel + "','" + vacantRoom + "','" + name.Text + "','" + roll.Text + "', '" + dept.SelectedItem.ToString() + "' ,'" + gender.SelectedItem.ToString() + "','" + email.Text + "','" + phone.Text + "','" + addr.Text + "','" + year + "')", con);
-                            cmd.ExecuteNonQuery();
-                            con.Close();
-                            reader.Close();
-                            DialogResult result = MessageBox.Show("Room " + vacantRoom.ToString() + " in " + Inhostel.ToString() + " has been alloted", "Notification", MessageBoxButtons.OK);
-                            if (result == DialogResult.OK)
-                            {   //clearing all the entries
-                                name.Text = "";
-                                email.Text = "";
-                                dept.SelectedIndex = 0;
-                                gender.SelectedIndex = 0;
-                                phone.Text = "";
-                                addr.Text = "";
-                                yop.Text = "";
-                                roll.Text = "";
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                vacantRoom = reader.GetInt32(1);
+                                Inhostel = reader.GetString(0);
+                                SqlCommand cmd2 = new SqlCommand("delete from vacant where Hostel='" + Inhostel + "' and Room='" + vacantRoom + "'", con);
+                                cmd2.ExecuteNonQuery();
+                                SqlCommand cmd = new SqlCommand(@"insert into boarders_info (Hostel, Room,Person, Roll, Dept, Gender, Email,Phone,Addr,PassoutYear) Values ('" + Inhostel + "','" + vacantRoom + "','" + name.Text + "','" + roll.Text + "', '" + dept.SelectedItem.ToString() + "' ,'" + gender.SelectedItem.ToString() + "','" + email.Text + "','" + phone.Text + "','" + addr.Text + "','" + year + "')", con);
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                                reader.Close();
+                                DialogResult result = MessageBox.Show("Room " + vacantRoom.ToString() + " in " + Inhostel.ToString() + " has been alloted", "Notification", MessageBoxButtons.OK);
+                                if (result == DialogResult.OK)
+                                {   //clearing all the entries
+                                    name.Text = "";
+                                    email.Text = "";
+                                    dept.SelectedIndex = 0;
+                                    gender.SelectedIndex = 0;
+                                    phone.Text = "";
+                                    addr.Text = "";
+                                    yop.Text = "";
+                                    roll.Text = "";
+                                }
+                            }
+                            //if rooms are not available
+                            else
+                            {
+                                con.Close();
+                                reader.Close();
+                                DialogResult result = MessageBox.Show("No Men's rooms are empty!");
+                                if (result == DialogResult.OK)
+                                {   //clearing all the entries
+                                    name.Text = "";
+                                    email.Text = "";
+                                    dept.SelectedIndex = 0;
+                                    gender.SelectedIndex = 0;
+                                    phone.Text = "";
+                                    addr.Text = "";
+                                    yop.Text = "";
+                                    roll.Text = "";
+                                }
                             }
                         }
-                        //if rooms are not available
-                        else
-                        {
-                            con.Close();
-                            reader.Close();
-                            DialogResult result = MessageBox.Show("No Men's rooms are empty!");
-                            if (result == DialogResult.OK)
-                            {   //clearing all the entries
-                                name.Text = "";
-                                email.Text = "";
-                                dept.SelectedIndex = 0;
-                                gender.SelectedIndex = 0;
-                                phone.Text = "";
-                                addr.Text = "";
-                                yop.Text = "";
-                                roll.Text = "";
-                            }
+                        catch (SqlException ex) when (ex.Number == 2627)
+                        {   
+                            MessageBox.Show("This Roll number already exists!", "Warning");
                         }
                     }
                 }
@@ -256,7 +271,7 @@ namespace FirstApp
                 {
                     string roll;
                     roll = removeroll.Text;
-                    SqlCommand cmd = new SqlCommand(@"select Hostel,Room from info where Roll='" + roll + "'", con);
+                    SqlCommand cmd = new SqlCommand(@"select Hostel,Room from boarders_info where Roll='" + roll + "'", con);
                     using (SqlDataReader reader1 = cmd.ExecuteReader())
                     {   //if the query exists
                         if (reader1.HasRows)
@@ -269,7 +284,7 @@ namespace FirstApp
                             reader1.Close();
                             SqlCommand cmd1 = new SqlCommand(@"insert into vacant (Hostel,Room) values ('" + Inhostel + "','" + vacantRoom + "')", con);
                             cmd1.ExecuteNonQuery();
-                            SqlCommand cmd2 = new SqlCommand(@"delete from info where Roll='" + roll + "'", con);
+                            SqlCommand cmd2 = new SqlCommand(@"delete from boarders_info where Roll='" + roll + "'", con);
                             cmd2.ExecuteNonQuery();
                             con.Close();
                             reader1.Close();
@@ -295,7 +310,7 @@ namespace FirstApp
                 {
                     int year;
                     year = int.Parse(removeyear.Text);
-                    SqlCommand cmd = new SqlCommand(@"select count(Room) from info where PassoutYear='" + year + "'", con);
+                    SqlCommand cmd = new SqlCommand(@"select count(Room) from boarders_info where PassoutYear='" + year + "'", con);
                     using (SqlDataReader reader1 = cmd.ExecuteReader())
                     {   //if query exists
                         reader1.Read();
@@ -309,7 +324,7 @@ namespace FirstApp
                             while (count > 0)
                             {
                                 count--;
-                                SqlCommand cmd7 = new SqlCommand(@"select Top 1 Hostel,Room from info where PassoutYear='" + year + "'", con);
+                                SqlCommand cmd7 = new SqlCommand(@"select Top 1 Hostel,Room from boarders_info where PassoutYear='" + year + "'", con);
                                 using (SqlDataReader reader2 = cmd7.ExecuteReader())
                                 {
                                     reader2.Read();
@@ -318,7 +333,7 @@ namespace FirstApp
                                     reader2.Close();
                                     SqlCommand cmd1 = new SqlCommand(@"insert into vacant (Hostel,Room) values ('" + Inhostel + "','" + vacantRoom + "')", con);
                                     cmd1.ExecuteNonQuery();
-                                    SqlCommand cmd2 = new SqlCommand(@"delete from info where Hostel='" + Inhostel + "' and Room='"+vacantRoom+"'", con);
+                                    SqlCommand cmd2 = new SqlCommand(@"delete from boarders_info where Hostel='" + Inhostel + "' and Room='"+vacantRoom+"'", con);
                                     cmd2.ExecuteNonQuery();
                                 }
                             }
@@ -350,9 +365,10 @@ namespace FirstApp
             if (tab.SelectedTab == tab.TabPages["cmh"])
             {
                 comboBox1.SelectedIndex = 0;
+                search.Text = null;
                 SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
                 con.Open();
-                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from info where Hostel='CMH' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from boarders_info where Hostel='CMH' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView2.AutoGenerateColumns = false;
@@ -363,9 +379,10 @@ namespace FirstApp
             if (tab.SelectedTab == tab.TabPages["nmh"])
             {
                 comboBox2.SelectedIndex = 0;
+                search1.Text = null;
                 SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
                 con.Open();
-                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from info where Hostel='NMH' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from boarders_info where Hostel='NMH' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView3.AutoGenerateColumns = false;
@@ -376,9 +393,10 @@ namespace FirstApp
             if (tab.SelectedTab == tab.TabPages["pmh"])
             {
                 comboBox3.SelectedIndex = 0;
+                search2.Text = null;
                 SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
                 con.Open();
-                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from info where Hostel='PMH' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from boarders_info where Hostel='PMH' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView4.AutoGenerateColumns = false;
@@ -389,9 +407,10 @@ namespace FirstApp
             if (tab.SelectedTab == tab.TabPages["nwh"])
             {
                 comboBox4.SelectedIndex = 0;
+                search3.Text = null;
                 SqlConnection con = new SqlConnection("Data Source=LAPTOP-6O9IJHOA;Initial Catalog=hostel;Integrated Security=True");
                 con.Open();
-                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from info where Hostel='NWH' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select Room,Person,Roll,Dept,Gender,Email,Phone,Addr,PassoutYear from boarders_info where Hostel='NWH' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView5.AutoGenerateColumns = false;
@@ -445,7 +464,7 @@ namespace FirstApp
             con.Open();
             if (comboBox1.SelectedIndex == 1)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='CMH' and Person like '%"+search.Text+ "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='CMH' and Person like '%"+search.Text+ "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView2.AutoGenerateColumns = false;
@@ -453,7 +472,7 @@ namespace FirstApp
             }
             else if (comboBox1.SelectedIndex == 2)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='CMH' and Roll like '%" + search.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='CMH' and Roll like '%" + search.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView2.AutoGenerateColumns = false;
@@ -461,7 +480,7 @@ namespace FirstApp
             }
             else if (comboBox1.SelectedIndex == 3)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='CMH' and Dept like '%" + search.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='CMH' and Dept like '%" + search.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView2.AutoGenerateColumns = false;
@@ -477,7 +496,7 @@ namespace FirstApp
             con.Open();
             if (comboBox2.SelectedIndex == 1)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Person like '%" + search1.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Person like '%" + search1.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView3.AutoGenerateColumns = false;
@@ -485,7 +504,7 @@ namespace FirstApp
             }
             else if (comboBox2.SelectedIndex == 2)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Roll like '%" + search1.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Roll like '%" + search1.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView3.AutoGenerateColumns = false;
@@ -493,7 +512,7 @@ namespace FirstApp
             }
             else if (comboBox2.SelectedIndex == 3)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NMH' and Dept like '%" + search1.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NMH' and Dept like '%" + search1.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView3.AutoGenerateColumns = false;
@@ -509,7 +528,7 @@ namespace FirstApp
             con.Open();
             if (comboBox3.SelectedIndex == 1)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='PMH' and Person like '%" + search2.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='PMH' and Person like '%" + search2.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView4.AutoGenerateColumns = false;
@@ -517,7 +536,7 @@ namespace FirstApp
             }
             else if (comboBox3.SelectedIndex == 2)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='PMH' and Roll like '%" + search2.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='PMH' and Roll like '%" + search2.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView4.AutoGenerateColumns = false;
@@ -525,7 +544,7 @@ namespace FirstApp
             }
             else if (comboBox3.SelectedIndex == 3)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='PMH' and Dept like '%" + search2.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='PMH' and Dept like '%" + search2.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView4.AutoGenerateColumns = false;
@@ -541,7 +560,7 @@ namespace FirstApp
             con.Open();
             if (comboBox4.SelectedIndex == 1)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NWH' and Person like '%" + search3.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NWH' and Person like '%" + search3.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView5.AutoGenerateColumns = false;
@@ -549,7 +568,7 @@ namespace FirstApp
             }
             else if (comboBox4.SelectedIndex == 2)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NWH' and Roll like '%" + search3.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NWH' and Roll like '%" + search3.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView5.AutoGenerateColumns = false;
@@ -557,7 +576,7 @@ namespace FirstApp
             }
             else if (comboBox4.SelectedIndex == 3)
             {
-                SqlDataAdapter sqlda = new SqlDataAdapter("select * from info where Hostel='NWH' and Dept like '%" + search3.Text + "%' order by Room", con);
+                SqlDataAdapter sqlda = new SqlDataAdapter("select * from boarders_info where Hostel='NWH' and Dept like '%" + search3.Text + "%' order by Room", con);
                 DataTable dtbl = new DataTable();
                 sqlda.Fill(dtbl);
                 dataGridView5.AutoGenerateColumns = false;
@@ -569,6 +588,11 @@ namespace FirstApp
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Environment.Exit(1);
+        }
+
+        private void label26_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Hey!");
         }
     }
 }
